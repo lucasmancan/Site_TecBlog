@@ -1,14 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
 body {
-    background: url('img/fundo.png') no-repeat ,linear-gradient(50deg, #0d45ba,#7c26f8);
-    background-attachment: fixed;
-    background-size: cover;
+   
+   font-size: 16px;
    height: 100%;
     font-family: Helvetica,arial,sans-serif;
     transition: all 0.5s;
 }
+
 html, .capa{
     height: 100%;
 }
@@ -100,7 +103,8 @@ html, .capa{
 .capa{
     display: table;
     width: 100%;
-   
+  
+ 
 
 }
 
@@ -119,19 +123,13 @@ html, .capa{
 }
 .texto-capa h1{
     font-weight: 900;
-    font-size: 80px;
+    font-size: 5em;
     letter-spacing: -0.05em;
     max-width: 100%;
     margin-bottom: 50px;
       font-family: 'Amatic SC', cursive;
 }
-.texto-capa2 h1{
-    font-weight: 900;
-    font-size: 60px;
-    letter-spacing: -0.05em;
-    max-width: 100%;
-    margin-bottom: 50px;
-}
+
 .btn-custom{
     color: white;
     border-radius: 500px;
@@ -155,6 +153,7 @@ html, .capa{
     border: 1px solid white;
     border-radius: 0px;
     font-family: 'Amatic SC', cursive;
+    font-size: 2em;
 }
 .btn-white:hover{
     border: 1px solid white;
@@ -178,6 +177,7 @@ article h3{
     color: gray;
     border-left: 5px solid black;
 }
+/*
 @media(max-width:768px)
 {
    .texto-capa h1{
@@ -195,7 +195,7 @@ article h3{
 } 
 
  
-}
+}*/
 .img-post{
     float: right;
     width: 200px;
@@ -207,4 +207,38 @@ footer{
     background-color: white;
     font-family: 'Amatic SC', cursive;
     margin-top: 10px;
+}
+article{
+    background-color: white;
+    border-bottom: 10px solid rgba(0,0,0,.3);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+article:hover{
+    border-bottom: 10px solid rgba(0,0,0,.9);
+   
+    border-radius: 0px;
+}
+article h4, h2{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+article h4{
+    font-size: 2em;
+}
+.att{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+footer:hover{
+    background: rgba(0,0,0,.9);
+    transition: all .4s;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
 }
