@@ -6,10 +6,11 @@ img{
 }
 body {
    
-   font-size: 16px;
-   height: 100%;
+    font-size: 16px;
+    height: 100%;
     font-family: Helvetica,arial,sans-serif;
     transition: all 0.5s;
+   
 }
 
 html, .capa{
@@ -41,6 +42,7 @@ html, .capa{
 
 .navbar-brand {
     padding: 5px 15px;
+    font-size: 2em;
 }
 
 .divisor {
@@ -115,11 +117,20 @@ html, .capa{
     vertical-align: middle;
     font-family: 'Amatic SC', cursive;
 }
-.texto-capa2{
+.texto-capaPrincipal{
     text-align: center;
     color: white;
     display: table-cell;
     vertical-align: middle;
+    font-family: 'Amatic SC', cursive;
+}
+.texto-capaPrincipal h1{
+    font-weight: 900;
+    font-size: 5em;
+    letter-spacing: -0.05em;
+    max-width: 100%;
+    margin-bottom: 50px;
+      font-family: 'Amatic SC', cursive;
 }
 .texto-capa h1{
     font-weight: 900;
@@ -129,7 +140,24 @@ html, .capa{
     margin-bottom: 50px;
       font-family: 'Amatic SC', cursive;
 }
+@media(max-width:768px){
+    .texto-capaPrincipal h1{
+        font-size: 2em;
+    }
 
+    .texto-capaPrincipal a{
+        font-size: 1em;
+    }
+    .logo{
+        width: 100px;
+    }
+    .navbar-brand{
+        font-size: 1em;
+    }
+    .perfil{
+        width: 150px;
+    }
+}
 .btn-custom{
     color: white;
     border-radius: 500px;
